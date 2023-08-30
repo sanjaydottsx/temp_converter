@@ -1,0 +1,123 @@
+/* TemperatureConverter.css */
+
+.temperature-converter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blue;
+  /* background-color: #f5f5f5; */
+}
+
+.temperature-converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.unit-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.radio-label {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.converted-result {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  /* Add conditional styling based on temperature */
+  color: var(--temperature-color, black);
+}
+
+/* Define color for hot temperatures */
+.converted-result.hot {
+  --temperature-color: #e53935; /* Red for hot temperatures */
+}
+
+/* Define color for cold temperatures */
+.converted-result.cold {
+  --temperature-color: green; /* Blue for cold temperatures */
+}
+
+.swap-button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ff5722;
+  color: white;
+}
+.convert-button {
+  padding: 0.7rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+.error-input {
+  border-color: #e53935;
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+.convert-button:hover {
+  background-color: #45a049;
+}
+/* ... (previous styles) */
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* Adjust margin as needed */
+}
+/* ... (previous styles) */
+
+.converted-result {
+  height: 2rem; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* Adjust margin as needed */
+}
